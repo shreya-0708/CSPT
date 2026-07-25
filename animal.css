@@ -1,0 +1,64 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("road.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+
+marquee{
+    margin-top:220px;
+}
+
+.elephant1{
+    width:300px;
+    height:250px;
+    vertical-align:bottom;
+}
+
+.dog1{
+    width:200px;
+    height:150px;
+    vertical-align:bottom;
+    margin-left:20px;
+}
+
+.cat3{
+    width:120px;
+    height:90px;
+    vertical-align:bottom;
+    margin-left:20px;
+}
+
+.rat1{
+    width:80px;
+    height:50px;
+    vertical-align:bottom;
+    margin-left:20px;
+}
+
+/* Optional bounce effect */
+.elephant1,
+.dog1,
+.cat3,
+.rat1{
+    animation:bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-8px);
+    }
+}
